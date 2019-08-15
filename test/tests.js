@@ -1,3 +1,4 @@
+import './04-regex-part-1.test.js';
 const test = QUnit.test;
 
 QUnit.module('Test Setup');
