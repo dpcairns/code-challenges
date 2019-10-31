@@ -54,7 +54,7 @@ skip('It should only return words that begin with a capital letter', assert => {
 const cities = ['Cleveland', 'San Diego', 'Birmingham', 'Seattle', 'Miami', 'New York City', 'Omaha', 'Portland', 'Austin', 'Boston', 'Newport Beach', 'Hoboken'];
 
 skip('It should return the cities whose names begin with the letters A through J', assert => {
-    assert.deepEqual(citiesAtoJ(cities).sort, ['Austin', 'Birmingham', 'Boston', 'Cleveland', 'Hoboken']);
+    assert.deepEqual(citiesAtoJ(cities).sort(), ['Austin', 'Birmingham', 'Boston', 'Cleveland', 'Hoboken']);
     assert.deepEqual(citiesAtoJ([]), []);
     assert.deepEqual(
         citiesAtoJ(['Albuquerque', 'Chicago', 'Philadelphia', 'Newark', 'Sacramento', 'Eugene']),
