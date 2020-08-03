@@ -10,12 +10,18 @@ Then, write a function named speaker that takes in a string and a callback funct
 
 export const greeting = (word) => {
     // Solution code here...
+    return word.toUpperCase();
 };
 
 export const speaker = (message, callback) => {
     // Solution code here...
+    return callback(message)
 };
 
+export const addEventListener = (eventName, callback) => {
+    const event = magicFunctionThatGetsEventObject(eventName)
+    callback(event)
+};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
